@@ -35,6 +35,8 @@ public class First10 {
             } while (i <= 10);
             System.out.println("sum = " + sum + " and product = " + prod);
             sc.close();
+			
+			System.out.println("");
         }
-
+		
     }
