@@ -35,10 +35,17 @@ public class Person {
 
         public int currAge () {
         int calcAge = date.getYear() - birthYear;
+
         return calcAge;
    }
 
-        public void info (){
-            System.out.println("Person's name: " + name + " and he/she is " + currAge());
+        public void info () {
+            if (currAge() < 0) {
+                System.out.println("Please, enter correct value of birthYear");
+            } else if (currAge() == 0) {
+                System.out.println("The " + name + " is less then one year");
+            } else {
+                System.out.println("Person's name: " + name + " and he/she is " + currAge());
+            }
         }
 }

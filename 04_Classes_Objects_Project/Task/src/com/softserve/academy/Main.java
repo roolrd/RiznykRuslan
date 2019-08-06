@@ -13,7 +13,7 @@ public class Main {
         Person person5 = new Person();
 
         person1.setName("Andy");
-        person1.setBirthYear(2000);
+        person1.setBirthYear(2019);
         person1.info();
         int numOfObj = Person.count;
         System.out.println("We have created: " + numOfObj + " Person's objects");
