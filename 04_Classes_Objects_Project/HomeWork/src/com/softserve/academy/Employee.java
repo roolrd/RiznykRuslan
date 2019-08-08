@@ -8,15 +8,17 @@ public class Employee {
     private static int totalHours;
     private static int countObj;
 
-        Employee() {
+    static {countObj=0;}
+
+      public   Employee() {
         countObj++;}
 
-    Employee(String name, double rate) {
+   public Employee(String name, double rate) {
         this.name = name;
         this.rate = rate;
         countObj++;}
 
-    Employee(String name, double rate, int hours) {
+   public Employee(String name, double rate, int hours) {
         this.name = name;
         this.rate = rate;
         this.hours = hours;
@@ -37,8 +39,8 @@ public class Employee {
     public int getHours(){
         return hours;}
 
-    public static void setCountObj(int countObj) {
-        Employee.countObj = countObj;}
+    public static int getCountObj() {
+        return countObj;}
 
     public static void setTotalHours(int totalHours) {
         Employee.totalHours = totalHours;}

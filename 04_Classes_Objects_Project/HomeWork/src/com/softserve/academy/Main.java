@@ -14,9 +14,12 @@ public class Main {
 
         Employee employee3 = new Employee("Volodymyr",95.00, 40);
 
+        System.out.println("Numbers of created instanses \"Emlpoyee\": " + Employee.getCountObj() + '\n');
+
         System.out.println(employee1);
         System.out.println(employee2);
         System.out.println(employee3);
+        System.out.println();
 
         Employee [] e = {employee1, employee2, employee3};
         int tH = 0;
@@ -25,5 +28,6 @@ public class Main {
             Employee.setTotalHours(tH);}
 
         System.out.println("Employees have worked out: " + Employee.getTotalHours() + " hours");
+
     }
 }
