@@ -8,7 +8,7 @@ public class Employee {
     private static int totalHours;
     private static int countObj;
 
-    Employee() {
+        Employee() {
         countObj++;}
 
     Employee(String name, double rate) {
@@ -61,5 +61,6 @@ public class Employee {
     public String toString() {
         return "Employee [Name = "
                 + name + ", rate = " + rate + ", hours= " + hours + "]";}
-}
+
+    }
 
