@@ -51,25 +51,33 @@ public class Main {
         }
 
         Employee[] identical = new Employee[ArrEmpl.length];
+        int ind = 0;
         for (int a = ArrEmpl.length - 1; a > 0; a--) {
             if (ArrEmpl[a].equals(ArrEmpl[a - 1])) {
                 identical[a] = ArrEmpl[a];
-                identical[a-1] = ArrEmpl[a-1];
+                identical[a - 1] = ArrEmpl[a - 1];
+                ind = 1;
             }
         }
+        if (ind != 0) {
+            System.out.println();
+            System.out.println("There are such identical Employees: ");
 
-//        if (identical.length == 0) {
-           System.out.println();
-//            System.out.println("There are such identical Employees: ");
             for (Employee d : identical) {
-                if (d != null)
+                if (d != null) {
                     System.out.println(d);
+                }
             }
-//        }
-//        else {System.out.println();
-//            System.out.println("There are no identical Employees");}
+        } else {
+            System.out.println();
+            System.out.println("There are no identical Employees");
+
+        }
     }
 }
+
+
+
 
 
 
