@@ -3,7 +3,8 @@ package com.softserve.academy.animals;
 public class Main {
 
     public static void main(String[] args) {
-        Animal [] animals  = {new Cat("Murchyk"),
+        Animal [] animals  = {
+                new Cat("Murchyk"),
                 new Dog("Leila"),
                 new Cat("Marsik"),
                 new Dog("Tuzik")};
